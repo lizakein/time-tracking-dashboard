@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  --purple-600: hsl(246, 80%, 60%);
+
+  --orange-300: hsl(15, 100%, 70%);
+  --blue-300: hsl(195, 74%, 62%);
+  --pink-400: hsl(348, 100%, 68%);
+  --green-400: hsl(145, 58%, 55%);
+  --purple-700: hsl(264, 64%, 52%);
+  --yellow-300: hsl(43, 84%, 65%);
+
+  --navy-950: hsl(226, 43%, 10%);
+  --navy-900: hsl(235, 46%, 20%);
+  --navy-200: hsl(236, 100%, 87%);
+  --purple-500: hsl(235, 45%, 61%);
+
+  --white: white;
+
+  --border-radius: 0.75rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--navy-950);
+  color: var(--white);
+}
+
+.container {
+  width: 88vw;
+  margin: auto;
+  padding-block: 5rem;
+}
+
+/* ========== COMPONENT: REPORT HEADER ========== */
+
+.report-header {
+  margin-block-end: 1.7rem;
+  background-color: var(--navy-900);
+  border-radius: var(--border-radius);
+}
+
+.user {
+  display: flex;
+  align-content: center;
+  padding: 1.8rem;
+  background-color: var(--purple-600);
+  border-radius: var(--border-radius);
+}
+
+.user__avatar {
+  width: 75px;
+  height: 75px;
+  margin-inline-end: 1rem;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+}
+
+.user__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.user__name {
+  display: block;
+  font-size: 1.5rem;
+  margin-block-start: 0.4rem;
+}
+
+.timeframes {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2.2rem;
+}
+
+button {
+  font-size: 1.125rem;
+  background-color: inherit;
+  color: var(--purple-500);
+  border: none;
+  cursor: pointer;
+}
+
+/* ========== COMPONENT: REPORT ========== */
+
+.report {
+  display: grid;
+  gap: 2rem;
+}
+
+.card {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ========== COMPONENT: CARD TOP ========== */
+
+.card__top {
+  height: 2.3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__top img {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+.card[id="work"] {
+  background-color: var(--orange-300);
+}
+
+.card[id="play"] {
+  background-color: var(--blue-300);
+}
+
+.card[id="study"] {
+  background-color: var(--pink-400);
+}
+
+.card[id="exercise"] {
+  background-color: var(--green-400);
+}
+
+.card[id="social"] {
+  background-color: var(--purple-700);
+}
+
+.card[id="self-care"] {
+  background-color: var(--yellow-300);
+}
+
+/* ========== COMPONENT: CARD CONTENT ========== */
+
+.card__content {
+  padding: 1.6rem;
+  background-color: var(--navy-900);
+  border-radius: var(--border-radius);
+}
+
+.card__header,
+.card__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__header {
+  margin-block-end: 0.5rem;
+}
+
+.card__type {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.card__menu {
+  cursor: pointer;
+}
+
+.card__hours--current {
+  font-size: clamp(1.875rem, 3vh, 3.625rem);
+  font-weight: 300;
+}
+
+.card__hours--previous {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--navy-200);
+}
+
+/* ========== STATE STYLES ========== */
+
+button:hover {
+  color: var(--white);
+}
+
+button[aria-pressed="true"] {
+  color: var(--white);
+}
+
+.card__content:hover {
+  background-color: var(--purple-500);
+}

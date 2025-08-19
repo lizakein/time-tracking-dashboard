@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+  <main class="container">
+    <section class="report-header">
+      <div class="user">
+        <img class="user__avatar" src="images/image-jeremy.png" alt="Jeremy Robson avatar" width="85px" height="85px" loading="lazy">
+        <h1 class="user__header">
+          Report for
+          <span class="user__name">Jeremy Robson</span>
+        </h1>  
+      </div>
+      <nav class="timeframes">
+        <button 
+          type="button" 
+          aria-pressed="false"
+          data-timeframe="daily"
+        >
+          Daily
+        </button>
+        <button 
+          type="button" 
+          aria-pressed="true"
+          data-timeframe="weekly"
+        >
+          Weekly
+        </button>
+        <button 
+          type="button" 
+          aria-pressed="false"
+          data-timeframe="monthly"
+        >
+          Monthly
+        </button>
+      </nav>   
+    </section>
+    
+    <section class="report">
+      <!-- <article class="card" id="work">
+        <div class="card__top">
+          <img src="./images/icon-work.svg" alt="">
+        </div>
+        <div class="card__content">
+          <div class="card__header">
+            <h2 class="card__type">Work</h2>
+            <button class="card__menu" aria-label="Open menu for Work"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="card__body">
+            <p class="card__hours--current">32hrs</p>
+            <p class="card__hours--previous">Last week - 36hrs</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="play">
+        <div class="card__top">
+          <img src="./images/icon-play.svg" alt="">
+        </div>
+        <div class="card__content">
+          <div class="card__header">
+            <h2 class="card__type">Play</h2>
+            <button class="card__menu" aria-label="Open menu for Play"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="card__body">
+            <p class="card__hours--current">10hrs</p>
+            <p class="card__hours--previous">Last week - 8hrs</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="study">
+        <div class="card__top">
+          <img src="./images/icon-study.svg" alt="">
+        </div>
+        <div class="card__content">
+          <div class="card__header">
+            <h2 class="card__type">Study</h2>
+            <button class="card__menu" aria-label="Open menu for Study"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="card__body">
+            <p class="card__hours--current">4hrs</p>
+            <p class="card__hours--previous">Last week - 7hrs</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="exercise">
+        <div class="card__top">
+          <img src="./images/icon-exercise.svg" alt="">
+        </div>
+        <div class="card__content">
+          <div class="card__header">
+            <h2 class="card__type">Exercise</h2>
+            <button class="card__menu" aria-label="Open menu for Exercise"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="card__body">
+            <p class="card__hours--current">4hrs</p>
+            <p class="card__hours--previous">Last week - 5hrs</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="social">
+        <div class="card__top">
+          <img src="./images/icon-social.svg" alt="">
+        </div>
+        <div class="card__content">
+          <div class="card__header">
+            <h2 class="card__type">Social</h2>
+            <button class="card__menu" aria-label="Open menu for Social"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="card__body">
+            <p class="card__hours--current">5hrs</p>
+            <p class="card__hours--previous">Last week - 10hrs</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="self-care">
+        <div class="card__top">
+          <img src="./images/icon-self-care.svg" alt="">
+        </div>
+        <div class="card__content">
+          <div class="card__header">
+            <h2 class="card__type">Self Care</h2>
+            <button class="card__menu" aria-label="Open menu for Self Care"><img src="./images/icon-ellipsis.svg" alt=""></button>
+          </div>
+          <div class="card__body">
+            <p class="card__hours--current">2hrs</p>
+            <p class="card__hours--previous">Last week - 2hrs</p>
+          </div>
+        </div>
+      </article>       -->
+    </section>
+    <script src="./js/script.js"></script>
+  </main>
+</body>
+</html>

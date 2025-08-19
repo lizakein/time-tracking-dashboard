@@ -1,0 +1,85 @@
+@media(min-width: 40.5rem) {
+  .report {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 68.75rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    width: 77vw;
+    max-width: 63.125rem;
+    margin: auto;
+    padding-block: 0;
+  }
+
+  /* ========== COMPONENT: REPORT HEADER ========== */
+
+  .report-header {
+    margin-block-end: 0;
+  }
+
+  .user {
+    flex-direction: column;
+    padding-block-end: 6rem;
+  }
+
+  .user__avatar {
+    width: 80px;
+    height: 80px;
+    margin-block-end: 2rem;
+  }
+
+  .user__name {
+    font-size: 2.25rem;
+    letter-spacing: 2.2px;
+    line-height: 1.3;
+  }
+
+  .timeframes {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.3rem;
+    padding: 1.7rem 2.2rem;
+  }
+
+  /* ========== COMPONENT: REPORT ========== */
+
+  .report {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .card__top {
+    height: 2.5rem;
+  }
+
+  .card__content {
+    height: 100%;
+  }
+
+  .card__header {
+    margin-block-end: 1.3rem;
+  }
+
+  .card__body {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .card__hours--current {
+    margin-block-end: 0.4rem;
+    font-size: 3.625rem;
+    letter-spacing: 0.1px;
+  }
+}
