@@ -50,13 +50,15 @@ function updateCards(timeframe) {
   });
 }
 
-fetch('./data.json')
-  .then((response) => response.json())
-  .then((data) => {
-    reportData = data;
-    renderInitialCards();
-    updateCards(currentFrame);
-});
+async function getData() {
+  const response = await fetch('./data.json');
+  const data = await response.json();
+  reportData = data;
+  renderInitialCards();
+  updateCards(currentFrame);
+}
+
+getData();
 
 buttons.forEach((btn) => {
   btn.addEventListener('click', () => {
